@@ -3,6 +3,8 @@
     <head>
         <title>Alone :)</title>
         <link rel="stylesheet" href="index.css" type="text/css">
+        <script src="https://kit.fontawesome.com/4e69cf51bc.js" crossorigin="anonymous">
+        </script>
     </head>
     <body>
         <header>
@@ -10,9 +12,9 @@
             <nav>
                 <ul class="nav_links">
                     <li><a href="#">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="">Skills</a></li>
+                    <li><a href="#contactme">Contact</a></li>
                     <a href="#"><button class="hire">Hire Me</button></a>
                 </ul>
             </nav>
@@ -30,36 +32,47 @@
                 </svg>
             </div>
         </div>
-        <h3 id="aboutme"><span>About Me</span></h3>
-        <hr>
-        <div class="about">
-            <div class="img">
-                <img src="http://www.themarketingsage.com/wp-content/uploads/2015/08/about-me-leon-severan-we-buy-houses.jpg" height="200px" alt="">
+        <div id="about">
+            <h3 id="aboutme"><span>About Me</span></h3>
+            <hr>
+            <div class="about">
+                <div class="img">
+                    <img src="http://www.themarketingsage.com/wp-content/uploads/2015/08/about-me-leon-severan-we-buy-houses.jpg" height="200px" alt="">
+                </div>
+                <div class="p">    
+                    <p>Hello, my name is Kamal Pandey. I'm a web developer,
+                    a coding student, and a software engineering student who 
+                    strives to give my all in whatever I do. Aside from coding, 
+                    I enjoy creating content, whether it's videos for YouTube or blog posts.
+                    I think that every problem has a solution, which is why I approach problems 
+                    with a problem-solving perspective. Learning new things fascinates me because 
+                    it allows me to grow into a better version of myself.</p>
+                </div>        
             </div>
-            <div class="p">    
-                <p>Hello, my name is Kamal Pandey. I'm a web developer,
-                a coding student, and a software engineering student who 
-                strives to give my all in whatever I do. Aside from coding, 
-                I enjoy creating content, whether it's videos for YouTube or blog posts.
-                I think that every problem has a solution, which is why I approach problems 
-                with a problem-solving perspective. Learning new things fascinates me because 
-                it allows me to grow into a better version of myself.</p>
-            </div>        
         </div>
         <span class="clear"></span>
-        <h3 id="contactme"><span>Contact Me</span></h3>
-        <hr>
-        <div class="contact">
-            <form action="get">
-                <input type="text" name="name" placeholder="Your Name" class="c_form">
-                <input type="email" name="email" placeholder="Your E-mail" class="c_form"><br>
-                <input type="text" name="subject" placeholder="Subject" class="c_form subject" width="80px"> <br>
-                <textarea name="message" id="" cols="30" rows="10" placeholder="Message" class="c_form message"></textarea>
-            </form>
-            <button class="send c_form">Send Message</button>
+        <div id="contact">
+            <h3 id="contactme"><span>Contact Me</span></h3>
+            <hr>
+            <div class="contact">
+                <form action="get">
+                    <input type="text" name="name" placeholder="Your Name" class="c_form">
+                    <input type="email" name="email" placeholder="Your E-mail" class="c_form"><br>
+                    <input type="text" name="subject" placeholder="Subject" class="c_form subject" width="80px"> <br>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Message" class="c_form message"></textarea>
+                </form>
+                <button class="send c_form">Send Message</button>
+            </div>
         </div>
         <footer>
-            
+            <h3 class="connect_here"><span>Let's Get Connected Here</span></h3>
+            <hr>
+            <div class="social_icons">
+                <a href="https://www.facebook.com/kamal.pandey03"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/kamalpandey_03/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/kamalpandey03"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://github.com/Kamal-pandey03"><i class="fa-brands fa-github"></i></a>
+            </div>
             <p>&copy; Kamal Pandey </p>
         </footer>
         
