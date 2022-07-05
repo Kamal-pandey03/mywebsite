@@ -138,14 +138,14 @@ hr{
     border: 2px solid #f39;
     margin-top: -47px;
 }
-div.social_icons i{
-    color: black;
+div.social_icons svg{
+    color: blueviolet;
     margin-top: 30px;
     padding: 0px 20px;
 }
-div.social_icons i:hover{
+/* div.social_icons svg:hover{
     color: blueviolet;
-}
+} */
 .connect_here{
     text-align: center;
     padding: 10px 0px;
