@@ -63,12 +63,18 @@ header{
     align-items: center;
     height: 400px;
     width: 49%;
+    padding-top: 15px;
 }
 .pink{
     height: 400px;
+    cursor: pointer;
 }
 .prof{
     color: #f39;
+}
+.prof:hover{
+    cursor: pointer;
+    color: red;
 }
 #aboutme, #contactme{
     text-align: center;
@@ -76,7 +82,6 @@ header{
     font-size: x-large;
     font-family:'Ubuntu Condensed', sans-serif;
     color: blueviolet;
-    
 }
 #aboutme span, #contactme span, .connect_here span{
     text-decoration: underline;
@@ -138,14 +143,20 @@ hr{
     border: 2px solid #f39;
     margin-top: -47px;
 }
-div.social_icons svg{
-    color: blueviolet;
-    margin-top: 30px;
-    padding: 0px 20px;
+.social_icons a i{
+    color: green;
+    /* margin-top: 30px; */
+    padding: 25px 20px;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
 }
-/* div.social_icons svg:hover{
-    color: blueviolet;
-} */
+.social_icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 .connect_here{
     text-align: center;
     padding: 10px 0px;
@@ -153,7 +164,31 @@ div.social_icons svg{
     font-family:'Ubuntu Condensed', sans-serif;
     color: blueviolet;
 }
-
+.social_icons a i:hover{
+    color: red;
+}
+.copyright{
+    font-size: large;
+    font-weight: bold;
+    border-top: 1px solid gray;
+    padding-top: 13px;
+}
+.apple{
+    display: none;
+}
+/* .apple{
+    display: hidden;
+    z-index: 99;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    animation: dropdown 5s infinite;
+    animation-delay: 2s;
+}
+@keyframes dropdown {
+    from {top: 400px;}
+    to {top: 900px;}
+  } */
 /* .menudeco{
     padding-top: 15px;
     padding-bottom: 5px;
