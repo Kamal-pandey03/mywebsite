@@ -64,6 +64,7 @@ header{
     height: 400px;
     width: 49%;
     padding-top: 15px;
+    position: relative;
 }
 .pink{
     height: 400px;
@@ -174,21 +175,33 @@ hr{
     padding-top: 13px;
 }
 .apple{
-    display: none;
+    display: hidden;
+    z-index: -1;
+    width: 30px;
+    height: 30px;
+    position: absolute;
 }
-/* .apple{
+.dropapple{
     display: hidden;
     z-index: 99;
     width: 30px;
     height: 30px;
-    position: relative;
-    animation: dropdown 5s infinite;
-    animation-delay: 2s;
+    position: absolute;
+    animation: dropdown 3s 1;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
 }
 @keyframes dropdown {
-    from {top: 400px;}
-    to {top: 900px;}
-  } */
+    from {top: 200px;}
+    to {top: 420px;}
+  }
+  .error{
+    color: red;
+    font-weight: bold;
+    font-size: medium;
+    padding-left: 25px;
+    padding: 5px;
+        }
 /* .menudeco{
     padding-top: 15px;
     padding-bottom: 5px;

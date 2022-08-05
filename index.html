@@ -5,7 +5,14 @@
         <link rel="stylesheet" href="index.css" type="text/css">
         <script src="https://kit.fontawesome.com/4e69cf51bc.js" crossorigin="anonymous">
         </script>
-        <script src="index.js"></script>
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
+        <!-- <script src="index.js"></script> -->
     </head>
     <body>
         <header>
@@ -25,14 +32,15 @@
                 <p>Hey there! <br>It's Kamal Pandey,<br>a <span class="prof"><u>Front-end Learner</u>.</span>
                 </p>
             </div>
-            <div class="photo">
+            <div class="photo" id="photo">
                 <!-- <svg class="pink" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                     <path fill="#FF0066" 
                     d="M36.4,-56.9C48.9,-48.7,61.8,-41.4,69.5,-30.1C77.1,-18.8,79.4,-3.5,78.7,12.4C78.1,28.2,74.4,44.7,64.1,54.3C53.8,63.8,37,66.3,20.8,71.3C4.5,76.3,-11.1,83.7,-23.1,79.7C-35.1,75.7,-43.4,60.2,-54.9,47.3C-66.5,34.4,-81.4,24.1,-84.6,11.3C-87.7,-1.5,-79,-16.8,-69.1,-28.7C-59.2,-40.6,-48.1,-49,-36.4,-57.6C-24.6,-66.2,-12.3,-74.9,-0.2,-74.6C12,-74.3,24,-65.1,36.4,-56.9Z" 
                     transform="translate(100 100)" />
                 </svg> -->
-                <img class="pink" src="https://img.freepik.com/premium-vector/apple-tree-isolated-white_1308-56079.jpg?w=2000" alt="apple tree" onclick="dropapple(event);">
-                <img id="apple" class="apple" src="https://toppng.com//public/uploads/preview/apple-fruit-png-apple-fruit-transparent-11563073201mj52xnr1gp.png" alt="apple" height="30px" width="30px">
+                <img class="pink" src="https://img.freepik.com/premium-vector/apple-tree-isolated-white_1308-56079.jpg?w=2000" alt="apple tree">
+                <!-- <img id="apple" class="apple" src="https://toppng.com//public/uploads/preview/apple-fruit-png-apple-fruit-transparent-11563073201mj52xnr1gp.png" alt="apple" height="30px" width="30px"> -->
+                <span class="error"></span>
             </div>
         </div>
         <div id="about">
@@ -78,6 +86,29 @@
             </div>
             <p class="copyright">&copy; Kamal Pandey 2022</p>
         </footer>
-        
+        <script>
+            $(document).ready(function(){
+                var click_count=0;
+                $(".pink").click(function(){
+                click_count++;
+                if(click_count<7)
+                {
+                    $("#photo").append('<img id="apple" class="apple" src="https://toppng.com//public/uploads/preview/apple-fruit-png-apple-fruit-transparent-11563073201mj52xnr1gp.png" alt="apple" height="30px" width="30px">');
+                    var appleFruit = $("#apple");
+                    //appleFruit.attr("src","https://toppng.com//public/uploads/preview/apple-fruit-png-apple-fruit-transparent-11563073201mj52xnr1gp.png");
+                    //appleFruit.classList.remove('apple');
+                    appleFruit.classList.add('dropapple');
+                }
+            else{
+                $(".error").html("You have many apples now!"<br>" Refresh to get more");
+            }
+                });
+                setInterval(() => {
+        setTimeout(function() {
+            $(".error").html("");
+            }, 3000);
+      }, 6000);
+            });
+        </script>
     </body>
 </html>
