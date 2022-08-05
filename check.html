@@ -20,17 +20,17 @@
       crossorigin="anonymous"
     ></script>
     <style>
-      .error {
-        color: red;
-        font-weight: bold;
-        font-size: medium;
-        padding: 5px;
-        z-index: 10;
-        position: absolute;
-        top: 320px;
-        right: 45px;
-      }
-    </style>
+        .error{
+    color: red;
+    font-weight: bold;
+    font-size: medium;
+    padding: 5px;
+    z-index: 10;
+    position: absolute;
+    top: 320px;
+    right: 45px;
+        }
+      </style>
     <!-- <script src="index.js"></script> -->
   </head>
   <body>
@@ -71,9 +71,6 @@
           alt="apple tree"
         />
         <!-- <img id="apple" class="apple" src="https://toppng.com//public/uploads/preview/apple-fruit-png-apple-fruit-transparent-11563073201mj52xnr1gp.png" alt="apple" height="30px" width="30px"> -->
-        <span class="engmessage"
-          >An Apple a Day Keeps the Doctor Away and Engineer Closer!</span
-        >
         <span class="error"></span>
       </div>
     </div>
@@ -167,63 +164,11 @@
           if (click_count < 7) {
             console.log(click_count);
             //append an apple image to the photo div
-            // $("#photo").append(
-            //   "<img class='apple' src='https://toppng.com//public/uploads/preview/apple-fruit-png-apple-fruit-transparent-11563073201mj52xnr1gp.png' alt='apple' height='30px' width='30px'>"
-            // );
-            // //add a class to the apple image
-            // $(".apple").addClass("dropapple");
-            if (click_count == 1) {
-                $("#photo").append(
-              "<img class='apple1' src='https://toppng.com//public/uploads/preview/apple-fruit-png-apple-fruit-transparent-11563073201mj52xnr1gp.png' alt='apple' height='30px' width='30px'>"
+            $("#photo").append(
+              "<img class='apple' src='https://toppng.com//public/uploads/preview/apple-fruit-png-apple-fruit-transparent-11563073201mj52xnr1gp.png' alt='apple' height='30px' width='30px'>"
             );
             //add a class to the apple image
-            $(".apple1").addClass("dropapple1");
-              $(".dropapple1").css("right", "320px");
-            }
-
-            if (click_count == 2) {
-                $("#photo").append(
-              "<img class='apple2' src='https://toppng.com//public/uploads/preview/apple-fruit-png-apple-fruit-transparent-11563073201mj52xnr1gp.png' alt='apple' height='30px' width='30px'>"
-            );
-            //add a class to the apple image
-            $(".apple2").addClass("dropapple2");
-              $(".dropapple2").css("right", "350px");
-            }
-            if (click_count == 3) {
-                $("#photo").append(
-              "<img class='apple3' src='https://toppng.com//public/uploads/preview/apple-fruit-png-apple-fruit-transparent-11563073201mj52xnr1gp.png' alt='apple' height='30px' width='30px'>"
-            );
-            //add a class to the apple image
-            $(".apple3").addClass("dropapple3");
-              $(".dropapple3").css("right", "290px");
-            }
-
-            if (click_count == 4) {
-                $("#photo").append(
-              "<img class='apple4' src='https://toppng.com//public/uploads/preview/apple-fruit-png-apple-fruit-transparent-11563073201mj52xnr1gp.png' alt='apple' height='30px' width='30px'>"
-            );
-            //add a class to the apple image
-            $(".apple4").addClass("dropapple4");
-              $(".dropapple4").css("right", "380px");
-            }
-
-            if (click_count == 5) {
-                $("#photo").append(
-              "<img class='apple5' src='https://toppng.com//public/uploads/preview/apple-fruit-png-apple-fruit-transparent-11563073201mj52xnr1gp.png' alt='apple' height='30px' width='30px'>"
-            );
-            //add a class to the apple image
-            $(".apple5").addClass("dropapple5");
-              $(".dropapple5").css("right", "260px");
-            }
-            if (click_count == 6) {
-                $("#photo").append(
-              "<img class='apple6' src='https://toppng.com//public/uploads/preview/apple-fruit-png-apple-fruit-transparent-11563073201mj52xnr1gp.png' alt='apple' height='30px' width='30px'>"
-            );
-            //add a class to the apple image
-            $(".apple6").addClass("dropapple6");
-              $(".dropapple6").css("right", "320px");
-            }
-
+            $(".apple").addClass("dropapple");
             // $("#photo").append(
             //   '<img id="apple" class="apple" src="https://toppng.com//public/uploads/preview/apple-fruit-png-apple-fruit-transparent-11563073201mj52xnr1gp.png" alt="apple" height="30px" width="30px">'
             // );
@@ -232,9 +177,10 @@
             // //appleFruit.classList.remove('apple');
             // appleFruit.classList.add("dropapple");
           } else {
-            $(".error").html(
-              "You have many apples now!" + "<br/>" + " Refresh to get more :)"
-            );
+            // $(".error").html(
+            //   "You have many apples now!" < br > " Refresh to get more"
+            // );
+            $(".error").html("You have many apples now!" + '<br/>'+ " Refresh to get more :)");
           }
         });
         setInterval(() => {

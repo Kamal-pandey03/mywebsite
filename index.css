@@ -5,6 +5,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0px 10px;
+    z-index: 999;
     background-color: white;
     position: sticky;
     top: 0%;
@@ -46,6 +47,7 @@ header{
 .main{
     display: flex;
     justify-content: space-between;
+    height: 470px;
 }
 .intro{
     display: flex;
@@ -174,6 +176,15 @@ hr{
     border-top: 1px solid gray;
     padding-top: 13px;
 }
+.engmessage{
+    position: absolute;
+    font-size: x-large;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(19, 0, 70);
+    top: 445px;
+    border-bottom: 1px solid red;
+}
 .apple{
     display: hidden;
     z-index: -1;
@@ -181,27 +192,110 @@ hr{
     height: 30px;
     position: absolute;
 }
-.dropapple{
+
+
+/*---Apple one---*/
+.dropapple1{
     display: hidden;
     z-index: 99;
     width: 30px;
     height: 30px;
+    cursor: pointer;
     position: absolute;
-    animation: dropdown 3s 1;
+    animation: dropdown1 3s 1;
     animation-delay: 0.3s;
     animation-fill-mode: forwards;
 }
-@keyframes dropdown {
+@keyframes dropdown1 {
     from {top: 200px;}
-    to {top: 420px;}
+    to {top: 409px;}
   }
-  .error{
-    color: red;
-    font-weight: bold;
-    font-size: medium;
-    padding-left: 25px;
-    padding: 5px;
-        }
+  /*---Apple two*/
+.dropapple2{
+    display: hidden;
+    z-index: 99;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    animation: dropdown2 3s 1;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+@keyframes dropdown2 {
+    from {top: 200px;}
+    to {top: 409px;}
+  }
+
+  /*---Apple three---*/
+.dropapple3{
+    display: hidden;
+    z-index: 99;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    animation: dropdown3 3s 1;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+@keyframes dropdown3 {
+    from {top: 200px;}
+    to {top: 409px;}
+  }
+
+  /*---Apple four---*/
+.dropapple4{
+    display: hidden;
+    z-index: 99;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    animation: dropdown4 3s 1;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+@keyframes dropdown4 {
+    from {top: 200px;}
+    to {top: 409px;}
+  }
+
+  /*---Apple five---*/
+.dropapple5{
+    display: hidden;
+    z-index: 99;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    animation: dropdown5 3s 1;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+@keyframes dropdown5 {
+    from {top: 200px;}
+    to {top: 409px;}
+  }
+
+  /*---Apple six---*/
+.dropapple6{
+    display: hidden;
+    z-index: 99;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    animation: dropdown6 3s 1;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+@keyframes dropdown6 {
+    from {top: 200px;}
+    to {top: 409px;}
+  }
+
+  
 /* .menudeco{
     padding-top: 15px;
     padding-bottom: 5px;

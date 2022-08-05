@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+header{
+    border-bottom: 2px solid #008000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    z-index: 999;
+    background-color: white;
+    position: sticky;
+    top: 0%;
+}
+.nav_links li, a, .hire{
+    font-family:'Ubuntu Condensed', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #008000;
+    text-decoration: none;
+}
+.nav_links li{
+    display: inline-block;
+    font-size: medium;
+    font-weight: 300;
+    padding: 0px 10px;
+}
+.nav_links li a:hover{
+    color: #f39;
+}
+.hire:hover{
+    background-color: #f39;
+}
+.favicon, .hire{
+    cursor: pointer;
+}
+.hire{
+    margin-left: 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 15px;
+    background-color: #008000;
+    color: white;
+    box-shadow: 2px 2px 2px gray;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#contact{
+    margin: 15px;
+    border: 1px solid gray;
+    padding: 10px;
+    position: relative;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px gray;
+}
+#contactme{
+    text-align: center;
+    color: green;
+    font-size: x-large;
+}
+#contact hr{
+    width: 50%;
+    border: 1px solid #f39;
+    margin-top: -20px;
+}
+.c_form{
+    width: 393px;
+    border: none;
+    border: 1px solid green;
+    border-radius: 9px;
+    margin: 15px;
+    align-self: center;
+    box-shadow: 2px 2px 2px gray;
+    padding: 9px 0px;
+}
+::placeholder{
+    padding-left: 9px;
+}
+.send{
+    padding: 10px 15px;
+    border-radius: 12px;
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    font-size: medium;
+}
+.send:hover{
+    background-color: #f39;
+}
