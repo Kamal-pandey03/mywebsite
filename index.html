@@ -50,6 +50,17 @@
           <a href="hireme.html"><button class="hire">Hire Me</button></a>
         </ul>
       </nav>
+      <div>
+        <button class="hire" onclick="showMore();">My Account</button>
+        <div class="dropbtn">
+          <ul class="hide" type="none">
+          <li>Home</li>
+          <li>About</li>
+          <li>DarkMode</li>
+          <li>Logout</li>
+          </ul>
+        </div>
+      </div>
     </header>
     <div class="main">
       <div class="intro">
@@ -242,6 +253,20 @@
           }, 3000);
         }, 7000);
       });
+    </script>
+    <script>
+      var click=0;
+      function showMore() {
+        click++;
+        if(click%2==0)
+        {
+          $(".dropbtn").removeClass("showDown"); 
+        }
+        else{
+          $(".dropbtn").addClass("showDown"); 
+        }
+  
+}
     </script>
   </body>
 </html>
