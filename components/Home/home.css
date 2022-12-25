@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap');
+*{
+    font-family:'Ubuntu Condensed', sans-serif;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 6rem;
+    align-items: center;
+}
+.social_icon{
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+}
+.social_link{
+    font-size: 1.25rem;
+    color: rgb(58, 58, 58);
+}
+.social_link:hover{
+    color: black;
+}
+.my_name{
+    font-size: 3rem;
+    margin-bottom: 0.25rem;
+}
+.subtitle{
+    position: relative;
+    padding-left: 1.5rem;
+    font-size: large;
+    font-weight: bold;
+}
+.description{
+    max-width: 350px;
+    margin-bottom: 2rem;
+    font-size: x-large;
+}
+.subtitle::before{
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: black;
+    left: 0;
+    top: 1rem;
+}
+
+.my_image{
+    background: url(../Kamalpandey.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 9px rgba(105, 105, 105, 0.3);
+    order: 1;
+    justify-self: center;
+    width: 250px;
+    height: 250px;
+    animation: profile_animation 8s ease-in-out infinite 1s;
+}
+@keyframes profile_animation{
+    0%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50%{
+        border-radius: 30% 60% 40% 70%/50% 60% 30% 60%;
+    }
+    100%{
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+/*--------------BreakPoints----------------*/
+@media screen and (max-width: 768px) {
+    .my_name{
+        font-size: 1.5rem;
+        margin-bottom: 0.15rem;
+    }
+    .subtitle{
+        position: relative;
+        padding-left: 1rem;
+        font-size: medium;
+        font-weight: bold;
+    }
+    .description{
+        max-width: 300px;
+        margin-bottom: 1.5rem;
+        font-size: larger;
+    }
+    .subtitle::before{
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 2px;
+        background-color: black;
+        left: 0;
+        top: 1rem;
+    }
+    .my_image{
+        height: 200px;
+        width: 200px;
+        box-shadow: inset 0 0 0 7px rgba(105, 105, 105, 0.3);
+    }
+    
+}
+@media screen and (max-width: 660px) {
+    .container{
+        display: grid;
+        grid-template-columns: 0.5fr 3fr;
+        padding-top: 3.5rem;
+        margin-left: 1rem;
+        justify-content: center;
+    }
+    .my_image{
+        height: 225px;
+        width: 225px;
+        order: initial;
+        justify-self: center;
+        box-shadow: inset 0 0 0 5px rgba(105, 105, 105, 0.3);
+    }
+    .me{
+        grid-column: 1/3;
+        margin-top: 2rem;
+        width: 100%;
+    }
+    .my_name{
+        font-size: 2.5rem;
+        margin-bottom: 0.25rem;
+    }
+    .subtitle{
+        position: relative;
+        font-size: larger;
+        padding-left: 3rem;
+        font-weight: bold;
+    }
+    .description{
+        max-width: 100%;
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+    .subtitle::before{
+        content: "";
+        position: absolute;
+        width: 48px;
+        height: 2px;
+        background-color: black;
+        left: 0;
+        top: 1rem;
+    }
+}
+@media screen and (max-width:350px) {
+    .my_image{
+        height: 190px;
+        width: 190px;
+    }
+    .my_name{
+        font-size: 1.75rem;
+        margin-bottom: 0.25rem;
+    }
+    .subtitle{
+        position: relative;
+        font-size: large;
+        padding-left: 2rem;
+        font-weight: bold;
+    }
+    .description{
+        max-width: 100%;
+        font-size: 1.25rem;
+        margin-bottom: 2rem;
+    }
+    .subtitle::before{
+        width: 32px;
+    }
+}
+

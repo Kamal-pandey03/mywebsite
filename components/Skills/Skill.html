@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills</title>
+    <link rel="stylesheet" href="skill.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="skill_text">
+        <h3><span>Skills</span></h3>
+        <hr />
+      </div>
+      <div class="skills">
+        <div class="skill_list hidden">
+          <div>
+            <img
+              class="img"
+              src="Content writer.png"
+              alt="content creator writer"
+            />
+          </div>
+          <div class="image_content">
+            <h4>Content Writer</h4>
+          </div>
+        </div>
+        <div class="skill_list hidden">
+          <div>
+            <img class="img" src="Blogger.png" alt="blogger" />
+          </div>
+          <div class="image_content">
+            <h4>Blogger</h4>
+          </div>
+        </div>
+        <div class="skill_list hidden">
+          <div>
+            <img class="img" src="Programmer.png" alt="programmer" />
+          </div>
+          <div class="image_content">
+            <h4>Programmer</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            console.log(entry);
+            entry.target.classList.toggle("show", entry.isIntersecting);
+            // if (entry.isIntersecting) {
+            //  observer.unobserve(entry.target);
+            // }
+            // if (entry.isIntersecting) {
+            //   entry.target.classList.add("show");
+            // } else {
+            //   entry.target.classList.remove("show");
+            // }
+          });
+        },
+        { threshold: 0.5 }
+      );
+      const hiddenElements = document.querySelectorAll(".hidden");
+      hiddenElements.forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>

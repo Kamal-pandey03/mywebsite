@@ -19,6 +19,7 @@
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <script src="https://kit.fontawesome.com/4e69cf51bc.js" crossorigin="anonymous"></script>
     <style>
       .error {
         color: red;
@@ -33,16 +34,16 @@
     </style>
     <!-- <script src="index.js"></script> -->
   </head>
-  <body>
-    <header>
+  <body class="b&w">
+    <header class="b&w">
       <img
         class="favicon"
         src="Kamal logo black.png"
         alt="logo"
         height="30px"
       />
-      <nav>
-        <ul class="nav_links">
+      <nav class="b&w">
+        <ul class="nav_links b&w">
           <li><a href="index.html">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="">Skills</a></li>
@@ -50,26 +51,26 @@
           <a href="hireme.html"><button class="hire">Hire Me</button></a>
         </ul>
       </nav>
-      <div>
+      <div class="b&w">
         <button class="hire" onclick="showMore();">My Account</button>
-        <div class="dropbtn">
+        <div class="dropbtn b&w">
           <ul class="hide" type="none">
           <li>Home</li>
           <li>About</li>
-          <li>DarkMode</li>
-          <li>Logout</li>
+          <li id="mode"><i class="fa-solid fa-circle-half-stroke"></i>DarkMode</li>
+          <li><i class="fa-solid fa-people-pulling" class="logout_icon"></i>Logout</li>
           </ul>
         </div>
       </div>
     </header>
-    <div class="main">
-      <div class="intro">
-        <p>
+    <div class="main b&w">
+      <div class="intro b&w">
+        <p class="b&w">
           Hey there! <br />It's Kamal Pandey,<br />a
           <span class="prof"><u>Front-end Learner</u>.</span>
         </p>
       </div>
-      <div class="photo" id="photo">
+      <div class="photo b&w" id="photo">
         <!-- <svg class="pink" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                     <path fill="#FF0066" 
                     d="M36.4,-56.9C48.9,-48.7,61.8,-41.4,69.5,-30.1C77.1,-18.8,79.4,-3.5,78.7,12.4C78.1,28.2,74.4,44.7,64.1,54.3C53.8,63.8,37,66.3,20.8,71.3C4.5,76.3,-11.1,83.7,-23.1,79.7C-35.1,75.7,-43.4,60.2,-54.9,47.3C-66.5,34.4,-81.4,24.1,-84.6,11.3C-87.7,-1.5,-79,-16.8,-69.1,-28.7C-59.2,-40.6,-48.1,-49,-36.4,-57.6C-24.6,-66.2,-12.3,-74.9,-0.2,-74.6C12,-74.3,24,-65.1,36.4,-56.9Z" 
@@ -149,7 +150,7 @@
         </form>
         <button class="send c_form">Send Message</button>
       </div>
-    </div>
+    </div>  
     <footer>
       <h3 class="connect_here"><span>Let's Get Connected Here</span></h3>
       <hr />
@@ -265,8 +266,21 @@
         else{
           $(".dropbtn").addClass("showDown"); 
         }
-  
 }
+    </script>
+    <script>
+      var click=0;
+      $("#mode").click(function(){
+  click++
+  if(click%2==0)
+        {
+          $(".b&w").removeClass("black"); 
+        }
+        else{
+          $(".b&w").addClass("black"); 
+        }
+  
+})
     </script>
   </body>
 </html>

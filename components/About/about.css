@@ -1,0 +1,81 @@
+.container{
+    display: grid;
+    row-gap: 2rem;
+}
+.about_me{
+    text-align: center;
+    font-size: xx-large;
+    padding: 10px 0px;
+}
+.about_me span{
+    padding-right: 1rem;
+    padding-left: 1rem;
+    background-color: white;
+}
+hr{
+    width: 69%;
+    border: 1px solid black;
+    margin-top: -3.6rem;
+}
+.about_content{
+    margin: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 2rem;
+}
+.about_text{
+    width: 50%;
+    font-size: large;
+    font-weight: 300;
+}
+.about_img{
+    border-radius: 50%;
+}
+
+/*------------------BreakPoints------------------*/
+@media screen and (max-width: 992px) {
+    .about_text{
+        font-size: large;
+        font-weight: 300;
+    }
+
+}
+@media screen and (max-width:720px) {
+    .about_content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .about_text{
+        width: 100%;
+    }
+    .about_me{
+        font-size: x-large;
+    }
+    hr{
+        margin-top: -3rem;
+    }
+}
+@media screen and (max-width:560px) {
+    .about_me{
+        font-size: larger;
+    }
+    .about_text{
+        font-size: medium;
+    }
+    hr{
+        margin-top: -2.6rem;
+    }
+}
+@media screen and (max-width:430px) {
+    .about_img{
+        height: 150px;
+        width: 150px;
+    }
+    .about_text{
+        font-size: medium;
+    }
+
+}

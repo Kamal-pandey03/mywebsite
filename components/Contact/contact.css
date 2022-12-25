@@ -1,0 +1,128 @@
+.top h3 {
+  font-size: x-large;
+  text-align: center;
+}
+.top span {
+  padding: 1rem 2rem;
+  background-color: white;
+}
+hr {
+  border: 1px solid black;
+  width: 80%;
+  margin-top: -2.5rem;
+}
+.content {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.form_content {
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 4px 3px rgb(170, 170, 170);
+}
+.form_content form {
+  height: 18rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+.form_content form div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contact_button {
+  padding: 0.5rem;
+  width: 100%;
+  border: none;
+  color: white;
+  background-color: black;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.form_details {
+  height: 1.4rem;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.social_links {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+}
+.social_links i {
+  cursor: pointer;
+  font-size: x-large;
+  color: black;
+}
+
+/*-------Text content CSS----------*/
+.text_content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 1rem;
+}
+.text_heading{
+  font-size: x-large;
+  font-weight: bold;
+}
+.text_description {
+  font-size: large;
+}
+.text_mail {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 8px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 2px rgb(170, 170, 170);
+}
+.mail_text {
+  display: flex;
+  flex-direction: column;
+}
+.mail_icon {
+  font-size: 2.5rem;
+}
+.mail_heading {
+  font-weight: bold;
+}
+
+/*-----BREAKDOWNS-----*/
+@media screen and (max-width: 880px) {
+  .content {
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+}
+@media screen and (max-width: 675px) {
+  .form_content form {
+    height: 18rem;
+    width: 17rem;
+  }
+}
+@media screen and (max-width:530px) {
+    .form_content form {
+        height: 23rem;
+        width: 14rem;
+      }
+    .form_content form div{
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.6rem;
+    }
+    .text_heading{
+        font-size: large;
+    }
+    .text_description{
+        font-size: medium;
+    }
+    .text_mail{
+        padding: 0 5px;
+        padding-top: 5px;
+        column-gap: 1rem;
+    }
+}
