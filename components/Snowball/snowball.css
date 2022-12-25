@@ -10,7 +10,16 @@ body {
   align-items: center;
   background-color: black;
 }
-.snowball {
+.snowball:nth-child(odd) {
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 0px 0px 5px 2px white;
+  animation: y-axis 10s infinite linear;
+  animation-direction: reverse;
+}
+.snowball:nth-child(even) {
   height: 0.5rem;
   width: 0.5rem;
   border-radius: 50%;
@@ -18,10 +27,17 @@ body {
   box-shadow: 0px 0px 5px 2px white;
   animation: y-axis 10s infinite linear;
 }
-.wrapper-1 {
+.wrapper-1:nth-child(odd) {
+  animation: x-axis 10s infinite ease-in-out;
+  animation-direction: reverse;
+}
+.wrapper-1:nth-child(even) {
   animation: x-axis 10s infinite ease-in-out;
 }
-.wrapper-2 {
+.wrapper-2:nth-child(odd) {
+  animation: z-rotate 10s infinite ease-in-out;
+}
+.wrapper-2:nth-child(even) {
   animation: z-rotate 10s infinite ease-in-out;
 }
 @keyframes x-axis {
