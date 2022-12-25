@@ -1,12 +1,12 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 body {
   width: 100vw;
   height: 100vh;
   margin: 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   background-color: black;
 }
@@ -25,35 +25,29 @@ body {
   animation: z-rotate 10s infinite ease-in-out;
 }
 @keyframes x-axis {
-    0%{
-        transform: translateX(-100px);
-    }
+  0% {
+    transform: translateX(-100px);
+  }
   50% {
     transform: translateX(0px);
   }
-  75%{
-    
-  }
-  100%{
+  100% {
     transform: translateY(100px);
   }
 }
 @keyframes y-axis {
-    0%{
-        transform: translateY(-300px);
-    }
+  0% {
+    transform: translateY(-300px);
+  }
   50% {
     transform: translateY(0px);
   }
-  75%{
-    
-  }
-  100%{
+  100% {
     transform: translateY(300px);
   }
 }
 @keyframes z-rotate {
   50% {
-    transform: rotateZ(360deg);
+    transform: rotateZ(120deg);
   }
 }
